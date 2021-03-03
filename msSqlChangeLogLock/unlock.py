@@ -47,10 +47,3 @@ def run_queries(hostname, database, user, password, port):
 	connection.close()
 
 run_queries(input("Database Server Name: "), input("Database: "), "deploy_user", input("Password: "), str(1433))
-
-
-
-
-
-
-
