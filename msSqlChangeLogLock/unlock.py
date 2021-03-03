@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python2
  
 import os
 import sys
@@ -46,4 +46,5 @@ def run_queries(hostname, database, user, password, port):
 	# Closing connection
 	connection.close()
 
-run_queries(input("Database Server Name: "), input("Database: "), "deploy_user", input("Password: "), str(1433))
+# If you want to change this to python3, just remember to change raw_input to input
+run_queries(raw_input("Database Server Name: "), raw_input("Database: "), "deploy_user", raw_input("Password: "), str(1433))
